@@ -7,36 +7,36 @@
 
 @layer base {
   :root {
-    /* Professional Beige/Brown Color Palette */
-    --background: 30 25% 98%;
-    --foreground: 30 15% 15%;
+    /* New Color Palette - Purple (#coc9ee) & Cream (#fff2e0) */
+    --background: 42 67% 94%; /* #fff2e0 */
+    --foreground: 237 8% 24%;
 
-    --card: 30 20% 97%;
-    --card-foreground: 30 15% 15%;
+    --card: 42 67% 96%;
+    --card-foreground: 237 8% 24%;
 
-    --popover: 30 20% 97%;
-    --popover-foreground: 30 15% 15%;
+    --popover: 42 67% 96%;
+    --popover-foreground: 237 8% 24%;
 
-    /* Primary: Rich Coffee Brown */
-    --primary: 25 35% 25%;
-    --primary-foreground: 30 25% 98%;
-    --primary-light: 25 25% 45%;
-    --primary-glow: 25 35% 35%;
+    /* Primary: Soft Purple */
+    --primary: 245 35% 85%; /* #coc9ee */
+    --primary-foreground: 237 15% 15%;
+    --primary-light: 245 40% 90%;
+    --primary-glow: 245 45% 80%;
 
-    /* Secondary: Warm Beige */
-    --secondary: 35 35% 88%;
-    --secondary-foreground: 30 15% 25%;
-    --secondary-dark: 30 25% 75%;
+    /* Secondary: Light Cream */
+    --secondary: 42 50% 92%;
+    --secondary-foreground: 237 8% 25%;
+    --secondary-dark: 42 40% 85%;
 
     /* Muted: Soft Cream */
-    --muted: 35 30% 92%;
-    --muted-foreground: 30 12% 45%;
+    --muted: 42 30% 90%;
+    --muted-foreground: 237 6% 45%;
 
-    /* Accent: Golden Amber */
-    --accent: 45 85% 55%;
-    --accent-foreground: 30 15% 15%;
-    --accent-light: 45 70% 70%;
-    --accent-glow: 45 85% 65%;
+    /* Accent: Warm Purple */
+    --accent: 250 60% 70%;
+    --accent-foreground: 237 8% 15%;
+    --accent-light: 250 40% 80%;
+    --accent-glow: 250 70% 75%;
 
     /* Success: Muted Sage Green */
     --success: 120 30% 45%;
@@ -62,7 +62,7 @@
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
     --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--primary-light)) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(35 35% 90%) 0%, hsl(30 30% 95%) 100%);
+    --gradient-warm: linear-gradient(135deg, hsl(42 67% 94%) 0%, hsl(42 50% 96%) 100%);
 
     /* Glass Effects */
     --glass-light: rgba(245, 245, 220, 0.25);

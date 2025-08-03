@@ -1,10 +1,10 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import FeatureHighlights from "@/components/FeatureHighlights";
-import DashboardPreview from "@/components/DashboardPreview";
 import ServicesGrid from "@/components/ServicesGrid";
 import SchemeAwareness from "@/components/SchemeAwareness";
 import ChatbotSection from "@/components/ChatbotSection";
+import InvestorSection from "@/components/InvestorSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,9 +13,9 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <FeatureHighlights />
-      <DashboardPreview />
       <ServicesGrid />
       <SchemeAwareness />
+      <InvestorSection />
       <ChatbotSection />
       <Footer />
     </div>
