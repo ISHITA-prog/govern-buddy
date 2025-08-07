@@ -205,7 +205,7 @@ const Dashboard = () => {
                   className={`flex items-center space-x-2 px-6 py-3 rounded-xl font-semibold transition-all ${
                     activeTab === tab.id
                       ? 'bg-primary text-primary-foreground shadow-lg'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-secondary/50'
+                      : 'text-white hover:text-foreground hover:bg-secondary/50'
                   }`}
                 >
                   <i className={tab.icon}></i>
@@ -286,7 +286,7 @@ const Dashboard = () => {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-foreground">{app.type}</h3>
-                      <p className="text-muted-foreground">Application #{app.id}</p>
+                                             <p className="text-black">Application #{app.id}</p>
                     </div>
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${getStatusColor(app.status)}`}>
                       {app.status.charAt(0).toUpperCase() + app.status.slice(1)}
@@ -296,7 +296,7 @@ const Dashboard = () => {
                   <div className="mb-4">
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm font-medium text-foreground">Progress</span>
-                      <span className="text-sm text-muted-foreground">{app.progress}%</span>
+                                             <span className="text-sm text-black">{app.progress}%</span>
                     </div>
                     <div className="w-full bg-secondary rounded-full h-2">
                       <div 
@@ -307,14 +307,14 @@ const Dashboard = () => {
                   </div>
 
                   <div className="grid grid-cols-2 gap-4 text-sm mb-4">
-                    <div>
-                      <span className="text-muted-foreground">Applied:</span>
-                      <div className="font-semibold text-foreground">{app.dateApplied}</div>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Last Update:</span>
-                      <div className="font-semibold text-foreground">{app.lastUpdate}</div>
-                    </div>
+                                         <div>
+                       <span className="text-black">Applied:</span>
+                       <div className="font-semibold text-foreground">{app.dateApplied}</div>
+                     </div>
+                     <div>
+                       <span className="text-black">Last Update:</span>
+                       <div className="font-semibold text-foreground">{app.lastUpdate}</div>
+                     </div>
                   </div>
 
                   <div className="flex space-x-3">
@@ -337,7 +337,7 @@ const Dashboard = () => {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-foreground">{license.name}</h3>
-                      <p className="text-muted-foreground">License #{license.id}</p>
+                                             <p className="text-black">License #{license.id}</p>
                     </div>
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${getStatusColor(license.status)}`}>
                       {license.status.charAt(0).toUpperCase() + license.status.slice(1)}
@@ -345,16 +345,16 @@ const Dashboard = () => {
                   </div>
 
                   <div className="grid grid-cols-2 gap-4 text-sm mb-4">
-                    <div>
-                      <span className="text-muted-foreground">Valid Until:</span>
-                      <div className="font-semibold text-foreground">{license.validUntil}</div>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Days to Expiry:</span>
-                      <div className={`font-semibold ${license.daysToExpiry < 60 ? 'text-destructive' : 'text-foreground'}`}>
-                        {license.daysToExpiry} days
-                      </div>
-                    </div>
+                                         <div>
+                       <span className="text-black">Valid Until:</span>
+                       <div className="font-semibold text-foreground">{license.validUntil}</div>
+                     </div>
+                     <div>
+                       <span className="text-black">Days to Expiry:</span>
+                       <div className={`font-semibold ${license.daysToExpiry < 60 ? 'text-destructive' : 'text-foreground'}`}>
+                         {license.daysToExpiry} days
+                       </div>
+                     </div>
                   </div>
 
                   <div className="flex space-x-3">
@@ -378,51 +378,51 @@ const Dashboard = () => {
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-6">
-                  <div>
-                    <label className="text-sm text-muted-foreground">Business Name</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.businessName}</div>
-                  </div>
-                  
-                  <div>
-                    <label className="text-sm text-muted-foreground">Business Type</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.businessType}</div>
-                  </div>
-                  
-                  <div>
-                    <label className="text-sm text-muted-foreground">Current Stage</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.stage}</div>
-                  </div>
-                  
-                  <div>
-                    <label className="text-sm text-muted-foreground">Location</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.location}</div>
-                  </div>
+                                     <div>
+                     <label className="text-sm text-black">Business Name</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.businessName}</div>
+                   </div>
+                   
+                   <div>
+                     <label className="text-sm text-black">Business Type</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.businessType}</div>
+                   </div>
+                   
+                   <div>
+                     <label className="text-sm text-black">Current Stage</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.stage}</div>
+                   </div>
+                   
+                   <div>
+                     <label className="text-sm text-black">Location</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.location}</div>
+                   </div>
                 </div>
 
-                <div className="space-y-6">
-                  <div>
-                    <label className="text-sm text-muted-foreground">PAN Number</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.panNumber}</div>
-                  </div>
-                  
-                  <div>
-                    <label className="text-sm text-muted-foreground">GST Number</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.gstNumber}</div>
-                  </div>
-                  
-                  <div>
-                    <label className="text-sm text-muted-foreground">Documents Uploaded</label>
-                    <div className="font-semibold text-foreground text-lg">{profile.documentsUploaded}</div>
-                  </div>
-                  
-                  <div>
-                    <label className="text-sm text-muted-foreground">Aadhaar Verification</label>
-                    <div className="flex items-center space-x-2">
-                      <i className="fas fa-check-circle text-success"></i>
-                      <span className="font-semibold text-success">Verified</span>
-                    </div>
-                  </div>
-                </div>
+                                 <div className="space-y-6">
+                   <div>
+                     <label className="text-sm text-black">PAN Number</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.panNumber}</div>
+                   </div>
+                   
+                   <div>
+                     <label className="text-sm text-black">GST Number</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.gstNumber}</div>
+                   </div>
+                   
+                   <div>
+                     <label className="text-sm text-black">Documents Uploaded</label>
+                     <div className="font-semibold text-foreground text-lg">{profile.documentsUploaded}</div>
+                   </div>
+                   
+                   <div>
+                     <label className="text-sm text-black">Aadhaar Verification</label>
+                     <div className="flex items-center space-x-2">
+                       <i className="fas fa-check-circle text-success"></i>
+                       <span className="font-semibold text-success">Verified</span>
+                     </div>
+                   </div>
+                 </div>
               </div>
 
               <div className="mt-8 pt-8 border-t border-border">
@@ -511,7 +511,7 @@ const Dashboard = () => {
                         </span>
                       </div>
                     </div>
-                    <p className="text-muted-foreground text-sm mb-4">{service.description}</p>
+                                         <p className="text-black text-sm mb-4">{service.description}</p>
                     <div className="flex justify-between items-center">
                       <span className="text-green-500 text-sm font-medium">{service.status}</span>
                       <button className="bg-accent text-primary px-4 py-2 rounded-xl font-semibold hover:bg-accent-light transition-colors text-sm">
@@ -541,7 +541,7 @@ const Dashboard = () => {
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-foreground mb-2">EasyBiz AI Assistant</h3>
-                    <p className="text-muted-foreground">Ask me anything about government services, applications, or compliance requirements.</p>
+                                         <p className="text-black">Ask me anything about government services, applications, or compliance requirements.</p>
                   </div>
                 </div>
 
@@ -653,16 +653,16 @@ const Dashboard = () => {
                             {getStatusText(app.status)}
                           </span>
                         </div>
-                        <p className="text-muted-foreground text-sm mb-2">ID: {app.id}</p>
-                        <div className="flex items-center gap-4 mt-3 text-sm text-muted-foreground">
-                          <span>Applied: {app.dateApplied}</span>
-                          <span>Updated: {app.lastUpdate}</span>
-                        </div>
+                                                 <p className="text-black text-sm mb-2">ID: {app.id}</p>
+                         <div className="flex items-center gap-4 mt-3 text-sm text-black">
+                           <span>Applied: {app.dateApplied}</span>
+                           <span>Updated: {app.lastUpdate}</span>
+                         </div>
                       </div>
                       <div className="flex flex-col items-end gap-3">
                         <div className="text-right">
                           <div className="text-2xl font-bold text-foreground">{app.progress}%</div>
-                          <div className="text-sm text-muted-foreground">Complete</div>
+                                                     <div className="text-sm text-black">Complete</div>
                         </div>
                         <div className="w-24 h-2 bg-secondary rounded-full overflow-hidden">
                           <div 
@@ -705,7 +705,7 @@ const Dashboard = () => {
                     <div className="flex items-start justify-between mb-4">
                       <div>
                         <h4 className="text-lg font-bold text-foreground">{inquiry.investor}</h4>
-                        <p className="text-muted-foreground">Investment Amount: {inquiry.amount}</p>
+                                                 <p className="text-black">Investment Amount: {inquiry.amount}</p>
                       </div>
                       <span className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">
                         {inquiry.stage}
@@ -713,7 +713,7 @@ const Dashboard = () => {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">{inquiry.contact}</span>
+                                             <span className="text-sm text-black">{inquiry.contact}</span>
                       <div className="space-x-3">
                         <button className="btn-primary text-primary-foreground px-4 py-2 rounded-lg text-sm">
                           View Details

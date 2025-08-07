@@ -44,7 +44,7 @@ const Login = () => {
                 <i className="fas fa-user text-primary-foreground text-3xl"></i>
               </div>
               <h1 className="text-3xl font-bold text-foreground mb-2">Welcome to EasyBiz</h1>
-              <p className="text-muted-foreground">Choose your preferred login method</p>
+              <p className="text-black">Choose your preferred login method</p>
             </div>
 
             {/* Login Method Selector */}
@@ -105,7 +105,7 @@ const Login = () => {
                         className="w-full px-4 py-3 rounded-xl bg-background border border-border focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
                         required
                       />
-                      <p className="text-sm text-muted-foreground mt-2">
+                      <p className="text-sm text-black mt-2">
                         OTP sent to your registered mobile number
                       </p>
                     </div>
@@ -156,9 +156,9 @@ const Login = () => {
                 <div className="text-center">
                   <div className="mb-6">
                     <i className="fas fa-folder text-6xl text-accent mb-4 block"></i>
-                    <p className="text-muted-foreground">
-                      You will be redirected to DigiLocker for secure authentication
-                    </p>
+                                          <p className="text-black">
+                        You will be redirected to DigiLocker for secure authentication
+                      </p>
                   </div>
                 </div>
               )}
@@ -220,7 +220,7 @@ const Login = () => {
             </form>
 
             <div className="mt-8 text-center">
-              <p className="text-muted-foreground">
+              <p className="text-black">
                 New user?{' '}
                 <button 
                   onClick={() => navigate('/register')}
@@ -237,7 +237,7 @@ const Login = () => {
                 <i className="fas fa-shield-alt text-accent text-lg mt-1"></i>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Secure Login</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-black">
                     Your data is protected with bank-level security and end-to-end encryption.
                   </p>
                 </div>

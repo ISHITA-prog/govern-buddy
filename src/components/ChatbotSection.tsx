@@ -144,7 +144,7 @@ const ChatbotSection = () => {
       <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/10" id="help">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-slide-up">
-            <h2 className="text-5xl font-black text-foreground mb-6 font-display">AI-Powered Assistant</h2>
+            <h2 className="text-5xl font-black text-primary mb-6 font-display">AI-Powered Assistant</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Get instant help in your preferred language. Voice-enabled support for accessibility.
             </p>
@@ -158,7 +158,7 @@ const ChatbotSection = () => {
                     <i className="fas fa-language text-accent-foreground text-xl"></i>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">Multilingual Support</h3>
+                    <h3 className="text-xl font-bold text-primary mb-2">Multilingual Support</h3>
                     <p className="text-muted-foreground">
                       Communicate in Hindi, English, Tamil, Bengali, Marathi, and 8+ regional languages. 
                       Voice input available for hands-free interaction.
@@ -171,7 +171,7 @@ const ChatbotSection = () => {
                     <i className="fas fa-brain text-primary-foreground text-xl"></i>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">Smart Understanding</h3>
+                    <h3 className="text-xl font-bold text-primary mb-2">Smart Understanding</h3>
                     <p className="text-muted-foreground">
                       Advanced AI understands complex queries, provides step-by-step guidance, 
                       and suggests relevant forms and documents.
@@ -184,7 +184,7 @@ const ChatbotSection = () => {
                     <i className="fas fa-clock text-success-foreground text-xl"></i>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">24/7 Availability</h3>
+                    <h3 className="text-xl font-bold text-primary mb-2">24/7 Availability</h3>
                     <p className="text-muted-foreground">
                       Round-the-clock assistance for urgent queries. Get immediate responses 
                       to application status, deadlines, and requirements.

@@ -4,7 +4,7 @@ const DashboardPreview = () => {
       <div className="absolute inset-0 bg-background/30"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-5xl font-black text-foreground mb-6 font-display">Your Business Command Center</h2>
+          <h2 className="text-5xl font-black text-accent mb-6 font-display">Your Business Command Center</h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
             Comprehensive overview of all your government interactions in one powerful dashboard
           </p>
@@ -63,14 +63,14 @@ const DashboardPreview = () => {
           
           {/* Recent Activity */}
           <div className="border-t border-border pt-8">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Recent Activity</h3>
+            <h3 className="text-2xl font-bold text-accent mb-8">Recent Activity</h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-6 p-4 rounded-xl hover:bg-secondary/20 transition-all hover-lift">
                 <div className="w-14 h-14 bg-gradient-success rounded-2xl flex items-center justify-center shadow-lg">
                   <i className="fas fa-check text-success-foreground text-xl"></i>
                 </div>
                 <div className="flex-1">
-                  <div className="font-bold text-foreground text-lg">Trade License Approved</div>
+                  <div className="font-bold text-accent text-lg">Trade License Approved</div>
                   <div className="text-muted-foreground">Application #TL/2024/001234 • 2 hours ago</div>
                   <div className="mt-2 flex items-center">
                     <span className="status-approved px-3 py-1 rounded-full text-sm font-medium">Completed</span>
@@ -86,7 +86,7 @@ const DashboardPreview = () => {
                   <i className="fas fa-clock text-primary-foreground text-xl"></i>
                 </div>
                 <div className="flex-1">
-                  <div className="font-bold text-foreground text-lg">Fire NOC Under Review</div>
+                  <div className="font-bold text-accent text-lg">Fire NOC Under Review</div>
                   <div className="text-muted-foreground">Application #NOC/2024/005678 • 1 day ago</div>
                   <div className="mt-2 flex items-center">
                     <span className="status-pending px-3 py-1 rounded-full text-sm font-medium">In Progress</span>

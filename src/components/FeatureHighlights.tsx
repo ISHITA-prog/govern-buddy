@@ -4,7 +4,7 @@ const FeatureHighlights = () => {
       <div className="absolute inset-0 bg-background/50"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-5xl font-black text-foreground mb-6 font-display">Why Choose ComplianceGPT?</h2>
+          <h2 className="text-5xl font-black text-accent mb-6 font-display">Why Choose ComplianceGPT?</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Experience the future of government services with our AI-powered platform designed for efficiency, transparency, and user satisfaction.
           </p>
@@ -15,7 +15,7 @@ const FeatureHighlights = () => {
             <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6 shadow-lg">
               <i className="fas fa-tachometer-alt text-primary-foreground text-3xl"></i>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Unified Dashboard</h3>
+            <h3 className="text-2xl font-bold mb-4 text-accent">Unified Dashboard</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Manage all your applications, licenses, and compliance requirements from a single, intuitive dashboard with real-time updates.
             </p>
@@ -27,7 +27,7 @@ const FeatureHighlights = () => {
             <div className="w-20 h-20 bg-gradient-accent rounded-2xl flex items-center justify-center mb-6 shadow-lg">
               <i className="fas fa-eye text-accent-foreground text-3xl"></i>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Real-Time Tracking</h3>
+            <h3 className="text-2xl font-bold mb-4 text-accent">Real-Time Tracking</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Get instant updates on your application status with SMS, WhatsApp, and email notifications. Never miss a deadline again.
             </p>
@@ -41,7 +41,7 @@ const FeatureHighlights = () => {
             <div className="w-20 h-20 bg-gradient-accent rounded-2xl flex items-center justify-center mb-6 shadow-lg">
               <i className="fas fa-robot text-accent-foreground text-3xl"></i>
             </div>
-            <h3 className="text-2xl font-bold mb-4 text-foreground">AI Assistant</h3>
+            <h3 className="text-2xl font-bold mb-4 text-accent">AI Assistant</h3>
             <p className="text-muted-foreground mb-6 leading-relaxed">
               Get 24/7 multilingual support in Hindi and English. Voice-enabled for accessibility and enhanced user experience.
             </p>
@@ -57,7 +57,7 @@ const FeatureHighlights = () => {
             <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4">
               <i className="fas fa-shield-alt text-accent-foreground text-xl"></i>
             </div>
-            <h4 className="font-bold text-foreground mb-2">Secure & Safe</h4>
+            <h4 className="font-bold text-accent mb-2">Secure & Safe</h4>
             <p className="text-sm text-muted-foreground">Bank-level security with end-to-end encryption</p>
           </div>
           
@@ -65,7 +65,7 @@ const FeatureHighlights = () => {
             <div className="w-12 h-12 bg-gradient-success rounded-xl flex items-center justify-center mx-auto mb-4">
               <i className="fas fa-language text-success-foreground text-xl"></i>
             </div>
-            <h4 className="font-bold text-foreground mb-2">Multilingual</h4>
+            <h4 className="font-bold text-accent mb-2">Multilingual</h4>
             <p className="text-sm text-muted-foreground">Support in 12+ Indian languages</p>
           </div>
           
@@ -73,7 +73,7 @@ const FeatureHighlights = () => {
             <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4">
               <i className="fas fa-mobile-alt text-primary-foreground text-xl"></i>
             </div>
-            <h4 className="font-bold text-foreground mb-2">Mobile First</h4>
+            <h4 className="font-bold text-accent mb-2">Mobile First</h4>
             <p className="text-sm text-muted-foreground">Optimized for smartphones and tablets</p>
           </div>
           
@@ -81,7 +81,7 @@ const FeatureHighlights = () => {
             <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center mx-auto mb-4">
               <i className="fas fa-clock text-accent-foreground text-xl"></i>
             </div>
-            <h4 className="font-bold text-foreground mb-2">24/7 Available</h4>
+            <h4 className="font-bold text-accent mb-2">24/7 Available</h4>
             <p className="text-sm text-muted-foreground">Round-the-clock service availability</p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&family=Architects+Daughter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,opsz,wght@0,14..28,300..800;1,14..28,300..800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,36 +8,36 @@
 
 @layer base {
   :root {
-    /* New Color Palette - Dark Blue (#2F3745) & Cyan (#18E0DB) */
-    --background: 220 15% 23%; /* #2F3745 */
+    /* New Color Palette - Light Sky Blue (#affaff) & Dark Blue (#002863) */
+    --background: 210 100% 20%; /* #002863 */
     --foreground: 0 0% 95%;
 
-    --card: 220 15% 25%;
+    --card: 210 100% 15%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 220 15% 25%;
+    --popover: 210 100% 15%;
     --popover-foreground: 0 0% 95%;
 
     /* Primary: Dark Blue */
-    --primary: 220 15% 23%; /* #2F3745 */
+    --primary: 210 100% 20%; /* #002863 */
     --primary-foreground: 0 0% 95%;
-    --primary-light: 220 15% 30%;
-    --primary-glow: 220 15% 35%;
+    --primary-light: 210 100% 30%;
+    --primary-glow: 210 100% 35%;
 
-    /* Secondary: Light Blue */
-    --secondary: 220 15% 30%;
-    --secondary-foreground: 0 0% 95%;
-    --secondary-dark: 220 15% 20%;
+    /* Secondary: Light Sky Blue */
+    --secondary: 180 100% 95%; /* #affaff */
+    --secondary-foreground: 210 100% 20%;
+    --secondary-dark: 180 100% 85%;
 
     /* Muted: Dark Blue */
-    --muted: 220 15% 20%;
-    --muted-foreground: 0 0% 90%;
+    --muted: 210 100% 15%;
+    --muted-foreground: 0 0% 0%;
 
-    /* Accent: Cyan */
-    --accent: 180 85% 50%; /* #18E0DB */
-    --accent-foreground: 220 15% 23%;
-    --accent-light: 180 80% 60%;
-    --accent-glow: 180 90% 45%;
+    /* Accent: Light Sky Blue */
+    --accent: 180 100% 95%; /* #affaff */
+    --accent-foreground: 210 100% 20%;
+    --accent-light: 180 100% 98%;
+    --accent-glow: 180 100% 90%;
 
     /* Success: Muted Sage Green */
     --success: 120 30% 45%;
@@ -51,9 +51,9 @@
     --destructive: 0 75% 55%;
     --destructive-foreground: 30 25% 98%;
 
-    --border: 220 15% 30%;
-    --input: 220 15% 25%;
-    --ring: 180 85% 50%;
+    --border: 210 100% 30%;
+    --input: 210 100% 25%;
+    --ring: 180 100% 95%;
 
     --radius: 0.75rem;
 
@@ -63,12 +63,12 @@
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-light)));
     --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(var(--primary-light)) 100%);
-    --gradient-warm: linear-gradient(135deg, hsl(42 67% 94%) 0%, hsl(42 50% 96%) 100%);
+    --gradient-warm: linear-gradient(135deg, #affaff 0%, #e6f9ff 100%);
 
     /* Glass Effects */
-    --glass-light: rgba(47, 55, 69, 0.25);
-    --glass-border: rgba(24, 224, 219, 0.2);
-    --glass-shadow: 0 8px 32px rgba(24, 224, 219, 0.15);
+    --glass-light: rgba(0, 40, 99, 0.4);
+    --glass-border: rgba(175, 250, 255, 0.3);
+    --glass-shadow: 0 8px 32px rgba(175, 250, 255, 0.2);
 
     /* Animation Easings */
     --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -101,10 +101,10 @@
     --background: 25 20% 12%;
     --foreground: 30 25% 95%;
 
-    --card: 25 25% 15%;
+    --card: 25 25% 10%;
     --card-foreground: 30 25% 95%;
 
-    --popover: 25 25% 15%;
+    --popover: 25 25% 10%;
     --popover-foreground: 30 25% 95%;
 
     --primary: 45 85% 60%;
@@ -117,7 +117,7 @@
     --secondary-dark: 25 20% 20%;
 
     --muted: 25 15% 20%;
-    --muted-foreground: 30 15% 65%;
+    --muted-foreground: 0 0% 0%;
 
     --accent: 45 85% 60%;
     --accent-foreground: 25 20% 12%;
@@ -149,7 +149,9 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Architects Daughter', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
     background: var(--gradient-warm);
     min-height: 100vh;
   }
@@ -202,10 +204,10 @@
   }
 
   .glass-nav {
-    background: rgba(47, 55, 69, 0.15);
+    background: rgba(0, 40, 99, 0.15);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
-    box-shadow: 0 4px 20px rgba(24, 224, 219, 0.1);
+    box-shadow: 0 4px 20px rgba(175, 250, 255, 0.1);
   }
 
   /* Text Gradients */
@@ -268,15 +270,21 @@
 
   /* Government Portal Specific Styles */
   .status-pending {
-    @apply bg-warning/10 text-warning border border-warning/30;
+    background: #ffa726;
+    color: #ffffff;
+    border: 1px solid #ffa726;
   }
 
   .status-approved {
-    @apply bg-success/10 text-success border border-success/30;
+    background: #4caf50;
+    color: #ffffff;
+    border: 1px solid #4caf50;
   }
 
   .status-rejected {
-    @apply bg-destructive/10 text-destructive border border-destructive/30;
+    background: #f44336;
+    color: #ffffff;
+    border: 1px solid #f44336;
   }
 
   .notification-dot {

@@ -92,11 +92,11 @@ const InvestorSection = () => {
                 </div>
                 <div className="text-right">
                   <div className="text-2xl font-black text-gradient-accent">{business.capitalNeeded}</div>
-                  <div className="text-sm text-muted-foreground">Capital Needed</div>
+                  <div className="text-sm text-accent">Capital Needed</div>
                 </div>
               </div>
 
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-accent mb-6 leading-relaxed">
                 {business.description}
               </p>
 
@@ -154,7 +154,7 @@ const InvestorSection = () => {
               <i className="fas fa-search-dollar text-accent-foreground text-2xl"></i>
             </div>
             <h4 className="font-bold text-foreground mb-2">Verified Opportunities</h4>
-            <p className="text-sm text-muted-foreground">All businesses verified through government compliance tracking</p>
+            <p className="text-sm text-accent">All businesses verified through government compliance tracking</p>
           </div>
 
           <div className="glass-card rounded-xl p-6 text-center hover-lift">
@@ -162,7 +162,7 @@ const InvestorSection = () => {
               <i className="fas fa-chart-line text-success-foreground text-2xl"></i>
             </div>
             <h4 className="font-bold text-foreground mb-2">Real-time Progress</h4>
-            <p className="text-sm text-muted-foreground">Track regulatory approval progress and milestones</p>
+            <p className="text-sm text-accent">Track regulatory approval progress and milestones</p>
           </div>
 
           <div className="glass-card rounded-xl p-6 text-center hover-lift">
@@ -170,7 +170,7 @@ const InvestorSection = () => {
               <i className="fas fa-handshake text-primary-foreground text-2xl"></i>
             </div>
             <h4 className="font-bold text-foreground mb-2">Direct Connect</h4>
-            <p className="text-sm text-muted-foreground">Connect directly with business owners and their compliance status</p>
+            <p className="text-sm text-accent">Connect directly with business owners and their compliance status</p>
           </div>
         </div>
 

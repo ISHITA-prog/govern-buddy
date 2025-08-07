@@ -66,7 +66,7 @@ const SchemeAwareness = () => {
     <section className="py-20 bg-gradient-to-br from-accent/5 to-primary/5" id="schemes">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-5xl font-black text-foreground mb-6 font-display">Scheme Awareness Hub</h2>
+          <h2 className="text-5xl font-black text-primary mb-6 font-display">Scheme Awareness Hub</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Discover government schemes tailored to your profile. Get personalized recommendations and never miss a deadline.
           </p>
@@ -108,21 +108,21 @@ const SchemeAwareness = () => {
                 </div>
               </div>
               
-              <h3 className="text-xl font-bold text-foreground mb-3">{scheme.title}</h3>
-              <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{scheme.description}</p>
+              <h3 className="text-xl font-bold text-accent mb-3">{scheme.title}</h3>
+              <p className="text-accent mb-4 text-sm leading-relaxed">{scheme.description}</p>
               
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-sm">
                   <i className="fas fa-rupee-sign text-accent mr-3 w-4"></i>
-                  <span className="text-foreground font-semibold">{scheme.amount}</span>
+                  <span className="text-accent font-semibold">{scheme.amount}</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <i className="fas fa-calendar-alt text-accent mr-3 w-4"></i>
-                  <span className="text-muted-foreground">Deadline: {scheme.deadline}</span>
+                  <span className="text-accent">Deadline: {scheme.deadline}</span>
                 </div>
                 <div className="flex items-center text-sm">
                   <i className="fas fa-user-check text-accent mr-3 w-4"></i>
-                  <span className="text-muted-foreground">{scheme.eligibility}</span>
+                  <span className="text-accent">{scheme.eligibility}</span>
                 </div>
               </div>
               
@@ -145,8 +145,8 @@ const SchemeAwareness = () => {
               <i className="fas fa-magic text-accent-foreground text-xl"></i>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-foreground">AI-Powered Recommendations</h3>
-              <p className="text-muted-foreground">Based on your profile and business type</p>
+              <h3 className="text-2xl font-bold text-accent">AI-Powered Recommendations</h3>
+              <p className="text-accent">Based on your profile and business type</p>
             </div>
           </div>
           
@@ -154,10 +154,10 @@ const SchemeAwareness = () => {
             <div className="p-6 bg-gradient-to-r from-accent/10 to-accent/5 rounded-xl border border-accent/20">
               <div className="flex items-center mb-4">
                 <i className="fas fa-star text-accent mr-3"></i>
-                <span className="font-semibold text-foreground">Highly Recommended</span>
+                <span className="font-semibold text-accent">Highly Recommended</span>
               </div>
-              <h4 className="font-bold text-foreground mb-2">PLI Scheme for Manufacturing</h4>
-              <p className="text-sm text-muted-foreground mb-4">
+              <h4 className="font-bold text-accent mb-2">PLI Scheme for Manufacturing</h4>
+              <p className="text-sm text-accent mb-4">
                 Perfect match for your electronics manufacturing business
               </p>
               <div className="flex items-center justify-between">
@@ -171,10 +171,10 @@ const SchemeAwareness = () => {
             <div className="p-6 bg-gradient-to-r from-success/10 to-success/5 rounded-xl border border-success/20">
               <div className="flex items-center mb-4">
                 <i className="fas fa-clock text-success mr-3"></i>
-                <span className="font-semibold text-foreground">Deadline Alert</span>
+                <span className="font-semibold text-accent">Deadline Alert</span>
               </div>
-              <h4 className="font-bold text-foreground mb-2">Export Promotion Scheme</h4>
-              <p className="text-sm text-muted-foreground mb-4">
+              <h4 className="font-bold text-accent mb-2">Export Promotion Scheme</h4>
+              <p className="text-sm text-accent mb-4">
                 Application deadline in 15 days - Don't miss out!
               </p>
               <div className="flex items-center justify-between">

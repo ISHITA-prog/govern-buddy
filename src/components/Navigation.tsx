@@ -73,7 +73,7 @@ const Navigation = () => {
                 </button>
               </div>
               
-              <button className="bg-gradient-to-r from-accent to-accent-light text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:from-accent-light hover:to-accent transition-all duration-300">
+              <button className="bg-gradient-to-r from-accent to-accent-light text-primary px-6 py-2 rounded-lg font-semibold shadow-lg hover:from-accent-light hover:to-accent transition-all duration-300">
                 <i className="fas fa-user mr-2"></i>Login
               </button>
             </div>
