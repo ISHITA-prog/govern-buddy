@@ -22,19 +22,21 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-slide-up text-foreground">
             <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight font-display">
-              Simplifying Government Services, <br />
-              <span className="text-gradient-accent">One Click at a Time</span>
+              One Portal. <br />
+              <span className="text-gradient-accent">All Approvals.</span> <br />
+              <span>Zero Hassle.</span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-muted-foreground font-light leading-relaxed">
-              Access licenses, track approvals, discover government schemes, and get personalized help — all in one smart, multilingual portal. No middlemen. No confusion. Just Saarthi.
+              EasyBiz is your comprehensive government approval platform, streamlining all business registrations, 
+              licenses, and compliance requirements in one unified interface.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 mb-12">
               <button 
-                onClick={() => navigate('/apply')}
+                onClick={() => navigate('/login')}
                 className="btn-primary text-primary-foreground px-8 py-4 rounded-xl font-bold text-lg hover-lift shadow-2xl"
               >
-                <i className="fas fa-rocket mr-3"></i>Start Your Application
+                <i className="fas fa-rocket mr-3"></i>Get Started
               </button>
               <button 
                 onClick={() => setShowChatbot(true)}
@@ -153,8 +155,8 @@ const HeroSection = () => {
         {/* Banner CTA */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-accent rounded-3xl p-12 text-accent-foreground">
-            <h2 className="text-3xl font-bold mb-4">Ready to take control of your government tasks?</h2>
-            <p className="text-xl mb-8 opacity-90">Let Saarthi guide you — your personal assistant for public services.</p>
+            <h2 className="text-3xl font-bold mb-4">Ready to transform your business approvals?</h2>
+            <p className="text-xl mb-8 opacity-90">Let EasyBiz guide you — your personal assistant for government services.</p>
             <div className="flex justify-center gap-6">
               <button 
                 onClick={() => navigate('/register')}

@@ -43,7 +43,7 @@ const Login = () => {
               <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <i className="fas fa-user text-primary-foreground text-3xl"></i>
               </div>
-              <h1 className="text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
+              <h1 className="text-3xl font-bold text-foreground mb-2">Welcome to EasyBiz</h1>
               <p className="text-muted-foreground">Choose your preferred login method</p>
             </div>
 

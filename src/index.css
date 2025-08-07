@@ -1,42 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&family=Architects+Daughter:wght@400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Professional Beige/Brown Government Portal Design System */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;600;700&display=swap');
 
 @layer base {
   :root {
-    /* New Color Palette - Purple (#coc9ee) & Cream (#fff2e0) */
-    --background: 42 67% 94%; /* #fff2e0 */
-    --foreground: 237 8% 24%;
+    /* New Color Palette - Dark Blue (#2F3745) & Cyan (#18E0DB) */
+    --background: 220 15% 23%; /* #2F3745 */
+    --foreground: 0 0% 95%;
 
-    --card: 42 67% 96%;
-    --card-foreground: 237 8% 24%;
+    --card: 220 15% 25%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 42 67% 96%;
-    --popover-foreground: 237 8% 24%;
+    --popover: 220 15% 25%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Primary: Soft Purple */
-    --primary: 245 35% 85%; /* #coc9ee */
-    --primary-foreground: 237 15% 15%;
-    --primary-light: 245 40% 90%;
-    --primary-glow: 245 45% 80%;
+    /* Primary: Dark Blue */
+    --primary: 220 15% 23%; /* #2F3745 */
+    --primary-foreground: 0 0% 95%;
+    --primary-light: 220 15% 30%;
+    --primary-glow: 220 15% 35%;
 
-    /* Secondary: Light Cream */
-    --secondary: 42 50% 92%;
-    --secondary-foreground: 237 8% 25%;
-    --secondary-dark: 42 40% 85%;
+    /* Secondary: Light Blue */
+    --secondary: 220 15% 30%;
+    --secondary-foreground: 0 0% 95%;
+    --secondary-dark: 220 15% 20%;
 
-    /* Muted: Soft Cream */
-    --muted: 42 30% 90%;
-    --muted-foreground: 237 6% 45%;
+    /* Muted: Dark Blue */
+    --muted: 220 15% 20%;
+    --muted-foreground: 0 0% 90%;
 
-    /* Accent: Warm Purple */
-    --accent: 250 60% 70%;
-    --accent-foreground: 237 8% 15%;
-    --accent-light: 250 40% 80%;
-    --accent-glow: 250 70% 75%;
+    /* Accent: Cyan */
+    --accent: 180 85% 50%; /* #18E0DB */
+    --accent-foreground: 220 15% 23%;
+    --accent-light: 180 80% 60%;
+    --accent-glow: 180 90% 45%;
 
     /* Success: Muted Sage Green */
     --success: 120 30% 45%;
@@ -50,9 +51,9 @@
     --destructive: 0 75% 55%;
     --destructive-foreground: 30 25% 98%;
 
-    --border: 30 20% 85%;
-    --input: 30 20% 90%;
-    --ring: 25 35% 25%;
+    --border: 220 15% 30%;
+    --input: 220 15% 25%;
+    --ring: 180 85% 50%;
 
     --radius: 0.75rem;
 
@@ -65,9 +66,9 @@
     --gradient-warm: linear-gradient(135deg, hsl(42 67% 94%) 0%, hsl(42 50% 96%) 100%);
 
     /* Glass Effects */
-    --glass-light: rgba(245, 245, 220, 0.25);
-    --glass-border: rgba(160, 82, 45, 0.2);
-    --glass-shadow: 0 8px 32px rgba(139, 69, 19, 0.15);
+    --glass-light: rgba(47, 55, 69, 0.25);
+    --glass-border: rgba(24, 224, 219, 0.2);
+    --glass-shadow: 0 8px 32px rgba(24, 224, 219, 0.15);
 
     /* Animation Easings */
     --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,7 +148,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground;
+    font-family: 'Architects Daughter', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     background: var(--gradient-warm);
     min-height: 100vh;
   }
@@ -200,10 +202,10 @@
   }
 
   .glass-nav {
-    background: rgba(245, 245, 220, 0.15);
+    background: rgba(47, 55, 69, 0.15);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
-    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.1);
+    box-shadow: 0 4px 20px rgba(24, 224, 219, 0.1);
   }
 
   /* Text Gradients */
